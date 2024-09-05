@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exhiPic - Photography</title>
+    <link rel="shortcut icon" href="src/images/icon-guia.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <header class="header">
+       
+        <div class="logo">
+            <a href="index.html">
+                <img src="src/images/foto-icon.png">
+            </a>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <a href=".main-content-II">
+                        <li>Artistas</li>
+                    </a>
+                    <a href=".bi-telephone-plus-fill">
+                        <li>Contatos</li>
+                    </a>
+                    <a href=".main-content-III">
+                        <li>Sobre</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div class="main-container">
+            <div class="container-I">
+                <div class="logomarca">
+                    <h1>exhiPic</h1>
+                </div>
+            </div>
+            <div class="container-II">
+                <div class="main-content-I">
+                    <div class="frase-content">
+                        <h2>“Há sempre duas pessoas em cada fotografia: o fotógrafo e o espectador.”</h2>
+                        <cite>Ansel Adams</cite>
+                    </div>
+                </div>
+            </div>
+            <div class="container-III">
+                <div class="main-content-II">
+                    <div class="artista">
+                        <img src="src/images/henry-desk.png" alt="Henry Cavill">
+                        <p>Henry Cavill</p>
+                        <button class="open-modal" data-modal="modal1">Abrir</button>
+                    </div>
+                    <div class="artista">
+                        <img src="src/images/alicia-desk.png" alt="Alicia Vikander">
+                        <p>Alicia Vikander</p>
+                        <button class="open-modal" data-modal="modal2">Abrir</button>
+                    </div>
+                    <div class="artista">
+                        <img src="src/images/logan-desk.png" alt="Logan Jackman">
+                        <p>Logan Jackman</p>
+                        <button class="open-modal" data-modal="modal3">Abrir</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modals -->
+            <div id="modal1" class="modal">
+                <div class="modal-box">
+                    <span class="close" data-modal="modal1">&times;</span>
+                    <h2>Henry Cavill</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quisquam illo in perferendis facilis laborum dolore sed sequi alias deleniti velit debitis consequatur voluptates enim, unde hic aut totam quis?</p>
+                    <div class="showcase">
+                        <div class="art">
+                            <img src="src/images/arts/foto1.jpg">
+                            <p>Casa de Noca</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto2.jpg">
+                            <p>Mar Morto</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto3.jpg">
+                            <p>Degraus do Eden</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto4.jpg">
+                            <p>Windows</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto5.jpg">
+                            <p>Rio Baixo</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto6.jpg">
+                            <p>Céu em Chamas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="modal2" class="modal">
+                <div class="modal-box">
+                    <span class="close" data-modal="modal2">&times;</span>
+                    <h2>Alicia Vikander</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quisquam illo in perferendis facilis laborum dolore sed sequi alias deleniti velit debitis consequatur voluptates enim, unde hic aut totam quis?</p>
+                    <div class="showcase">
+                        <div class="art">
+                            <img src="src/images/arts/foto7.jpg">
+                            <p>Do alto</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto8.jpg">
+                            <p>Céu Constelação</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto9.jpg">
+                            <p>Monte Gordo</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto10.jpg">
+                            <p>Monte Magro</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto11.jpg">
+                            <p>Smoke Jungle</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto12.jpg">
+                            <p>Rio Solidões</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            
+            <div id="modal3" class="modal">
+                <div class="modal-box">
+                    <span class="close" data-modal="modal3">&times;</span>
+                    <h2>Logan Jackman</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quisquam illo in perferendis facilis laborum dolore sed sequi alias deleniti velit debitis consequatur voluptates enim, unde hic aut totam quis?</p>
+                    <div class="showcase">
+                        <div class="art">
+                            <img src="src/images/arts/foto13.jpg">
+                            <p>Nada Vejo</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto14.jpg">
+                            <p>Sunrise Indu</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto15.jpg">
+                            <p>Rio Azul</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto16.jpg">
+                            <p>Vulcão Vikingur</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto17.jpg">
+                            <p>Bangladesh</p>
+                        </div>
+                        <div class="art">
+                            <img src="src/images/arts/foto11.jpg">
+                            <p>RevoltaMar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-expo">
+            <div class="expo-content">
+                <i class="bi bi-arrow-left-square" id="prev"></i>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="src/images/foto2-expo.jpg" alt="Foto 1">
+                        </div>
+                        <div class="slide">
+                            <img src="src/images/foto1-expo.jpg" alt="Foto 2">
+                        </div>
+                        <div class="slide">
+                            <img src="src/images/foto3-expo.jpg" alt="Foto 3">
+                        </div>
+                    </div>
+                </div>
+                <i class="bi bi-arrow-right-square" id="next"></i>
+            </div>
+        </div>
+      
+        <div class="container-IV">
+            <h2>Sobre</h2>
+            <div class="main-content-III">
+                <p>ExhiPic é um portal para a exibição e divulgação fotográfica de novos artistas independentes. O acesso as informações e as artes é totalmente gratuito. Entre em contato conosco caso tenha interesse em participar do projeto e quem sabe ser um dos artistas escolhidos da semana.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content-I">
+            <div class="container-V">
+                <div class="footer-inner">
+                    <hr> 
+                    <h1>exhiPic</h1>
+                    <hr>
+                    <p>“Embora exista talvez uma província em que a fotografia não nos possa dizer nada mais do que aquilo que vemos com os nossos próprios olhos, há outra em que nos prova quão pouco os nossos olhos nos permitem ver.”</p>
+                </div>
+                <div class="footer-inner">
+                    <hr> 
+                    <h1>Serviços</h1>
+                    <hr>
+                    <h3><i class="bi bi-share"></i> Agenciação</h3>
+                    <h3><i class="bi bi-file-person"></i> Artistas</h3>
+                    <h3><i class="bi bi-globe-americas"></i> Divulgação</h3>
+                    <h3><i class="bi bi-images"></i> Museu</h3>
+                </div>
+                <div class="footer-inner">
+                    <hr> 
+                    <h1>Redes</h1>
+                    <hr>
+                    <h3><i class="bi bi-facebook"></i> Facebok</h3>
+                    <h3><i class="bi bi-instagram"></i> Instagram</h3>
+                    <h3><i class="bi bi-whatsapp"></i> WhatsApp</h3>
+                </div>
+                <div class="footer-inner">
+                    <hr>
+                    <h1>Contatos</h1>
+                    <hr>
+                    <h3><i class="bi bi-geo-alt-fill"></i> Bahia - Brasil</h3>
+                    <h3><i class="bi bi-telephone-plus-fill"></i> +55 71 99312-6257 </h3>
+                    <h3><i class="bi bi-pip-fill"></i> github.com/Olivamatheus</h3>
+                    <h3><i class="bi bi-envelope-at"></i> mathoojobs@gmail.com</h3>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer-content">
+            <p>Developed - Oliva 🐦 </p>
+        </div>
+
+    </footer>
+
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

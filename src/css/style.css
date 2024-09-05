@@ -1,0 +1,689 @@
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root {
+    --cor0: #fff189;
+    --cor1: #ffe386;
+    --cor2: #FCE000;
+    --cor3: #FCC200;
+    --cor4: #FCA300;
+    --cor5: #896900;
+    --cor6: #825400;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--cor0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;   
+}
+
+nav a li {
+    color: var(--cor6);
+    text-align: left;
+    margin-left: 20px;
+    padding: 0.4rem;
+    position: relative;
+}
+
+.main-container {
+    height: 1080px;
+    background-image: url('../images/wallpaper-desk.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-I {
+    width: 100%;
+}
+
+.logomarca {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logomarca h1 {
+    width: 100%;
+    height: 150px;
+    font-size: 7rem;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.container-II  {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase-content {
+    font-size: 1.2rem;
+    max-width: 560px;
+    text-align: justify;
+    margin-right: 300px;
+}
+
+.container-III {
+    width: 100%;
+    max-height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-content-II {
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.artista {
+    width: 220px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--cor3);
+    box-shadow: 0 0 20px var(--cor0);
+    border-radius: 10px;
+}
+
+.artista img {
+    width: 200px;
+    height: 280px;
+    margin-top: 10px;
+}
+
+.artista p {
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px;
+}
+
+.artista button {
+    width: 60%;
+    height: 40px;
+    margin: auto;
+    border: 3px solid var(--cor3);
+    border-radius: 20px;
+    background-color: var(--cor3);
+    color: var(--cor0);
+    cursor: pointer;
+}
+
+.artista button:hover {
+    background-color: #FFF;
+    color: var(--cor6);
+    font-weight: 900;
+    border: 3px solid #FFF;
+    box-shadow: 2px 2px 20px var(--cor3);
+}
+
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-box {
+    background-color: var(--cor1);
+    margin: 5% auto;
+    padding: 20px;
+    border: 2px solid var(--cor4);
+    box-shadow: 0 0 15px var(--cor2);
+    border-radius: 10px;
+    width: 800px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-box h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-box p {
+    width: 500px;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.showcase {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.art {
+    width: 210px;
+    height: 170px;
+    border: 2px solid var(--cor4);
+    box-shadow: 0 0 10px var(--cor2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.art img {
+    width: 90%;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.art p {
+    width: 100%;
+    text-align: center;
+    font-size: 600;
+    margin: 3px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 100%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container-IV{
+    width: 100%;
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-expo {
+    background-color: var(--cor0);
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    max-height: 550px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.expo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 70%;
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: auto;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    border: 2px solid var(--cor3);
+    box-shadow: 0 0 20px var(--cor0);
+    border-radius: 10px;
+}
+
+.expo-content .bi {
+    font-size: 2rem;
+}
+
+#prev {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#next {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.container-IV h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 10px;
+}
+
+
+.main-content-III p {
+    width: 600px;
+    max-height: 250px;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 15px;
+}
+
+footer {
+    margin-top: auto;
+  }
+
+.footer-content-I {
+    height: 220px;
+    background-color: var(--cor6);
+}
+
+.container-V {
+    max-width: 800px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-inner {
+    width: 150px;
+    height: 150px;
+    flex-direction: column;
+    color: var(--cor0);
+}
+
+.footer-inner h1 {
+    text-align: center;
+}
+
+.footer-inner h3, p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.footer-inner {
+    font-size: 0.8rem;
+    margin: auto;
+}
+
+.footer-inner h3, p {
+    width: 150px;
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+.footer-inner hr {
+    width: 100%;
+    margin: auto;
+    background-color: var(--cor1);
+    border: 0.8px solid var(--cor2);
+    border-color: var(--cor2); 
+    box-shadow: 0 0 5px var(--cor2);
+}
+
+footer hr {
+    background-color: var(--cor1);
+    border: 1.2px solid var(--cor2);
+    border-color: var(--cor2); 
+    box-shadow: 0 0 5px var(--cor2);
+}
+
+.footer-content {
+    height: 30px;
+    background-color: var(--cor6);
+    color: var(--cor0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+@media (max-width: 1920px) {
+
+    .main-container {
+        height: 600px;
+        justify-content: flex-start;
+    }
+
+    .logomarca h1 {
+        height: 100px;
+        font-size: 5rem;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    .frase-content {
+        max-width: 380px;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin: 30px;
+        margin-right: 200px;
+    }
+
+    .artista {
+        width: 175px;
+        height: 280px;
+    }
+
+    .artista img {
+        width: 130px;
+        height: 180px;
+    }
+
+    .artista p {
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin: 10px;
+    }
+    
+    .artista button {
+        width: 40%;
+        height: 30px;
+        margin: auto;
+        border: 3px solid var(--cor6);
+        border-radius: 20px;
+        background-color: var(--cor6);
+        color: var(--cor0);
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 1085px) {
+    
+    .main-container {
+        height: 400px;
+    }
+
+    .logomarca h1 {
+        height: 40px;
+        font-size: 3.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+      
+    }
+
+    .container-II {
+        max-height: 80px;
+    }
+
+    .frase-content {
+        max-width: 380px;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin: 15px;
+        margin-right: 200px;
+    }
+
+    .artista {
+        width: 150px;
+        height: 200px;
+    }
+
+    .artista img {
+        width: 80px;
+        height: 110px;
+    }
+
+    .artista p {
+        font-size: 1rem;
+    }
+    
+    .artista button {
+        height: 25px;
+    }
+
+    .modal-box {
+        width: 340px;
+        height: 650px;
+    }
+
+    .modal-box h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .modal-box p {
+        width: 100%;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+
+    .showcase {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2;
+        margin-top: 5px;
+    }
+
+    .art {
+        width: 140px;
+        height: 110px;
+    }
+
+    .art img {
+        width: 80%;
+    }
+
+    .art p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .container-expo { 
+        min-height: 400px;
+        max-height: 550px;
+    }
+
+    .slide img {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .container-IV h2 {
+        font-size: 1.2rem;
+    }
+    
+    .main-content-III p {
+        width: 500px;
+        font-size: 1rem;
+        
+    }
+}
+
+@media (max-width: 800px) {
+
+    .main-container {
+        max-height: 190px;
+    }
+
+    .logo {
+        padding-left: 5px;
+    }
+
+    .logomarca h1 {
+        height: 40px;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+      
+    }
+
+    .container-II {
+        max-height: 30px;
+    }
+
+    .main-content-I {
+        height: 100%;
+    }
+
+    .frase-content {
+        width: 140px;
+        font-size: 0.3rem;
+        text-align: justify;
+        margin: 5px;
+        margin-right: 120px;
+    }
+
+    .main-content-II {
+        max-width: 500px;
+    }
+
+    .artista {
+        width: 75px;
+        height: 110px;
+    }
+
+    .artista img {
+        width: 40px;
+        height: 60px;
+        margin-top: 3px;
+    }
+
+    .artista p {
+        max-width: 100%;
+        font-size: 0.5rem;
+        margin: 3px;
+    }
+    
+    .artista button {
+        width: 40px;
+        height: 20px;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .container-expo { 
+        min-height: 220px;
+        max-height: 350px;
+    }
+
+    .slide img {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .container-IV h2 {
+        font-size: 1rem;
+    }
+    
+    .main-content-III p {
+        width: 330px;
+        font-size: 0.6rem;
+        margin-top: 0;
+    }
+
+    .footer-content-I {
+        height: 320px;
+        background-color: var(--cor6);
+    }
+    
+    .container-V {
+        max-width: 360px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .footer-inner {
+        margin-top: 15px;
+    }
+
+}
